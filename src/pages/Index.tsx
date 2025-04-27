@@ -2,6 +2,7 @@ import Header from "@/components/Header";
 import Hero from "@/components/Hero";
 import LatestPosts from "@/components/LatestPosts";
 import Footer from "@/components/Footer";
+import { Instagram, Youtube } from "lucide-react";
 
 const Index = () => {
   return (
@@ -60,7 +61,7 @@ const Index = () => {
                 rel="noopener noreferrer"
                 className="flex items-center justify-center gap-2 px-6 py-3 bg-black text-white rounded-lg hover:opacity-90 transition-opacity"
               >
-                <TikTok className="h-5 w-5" />
+                <span className="text-lg">📱</span>
                 <span>TikTok</span>
               </a>
             </div>

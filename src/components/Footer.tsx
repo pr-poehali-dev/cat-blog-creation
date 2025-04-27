@@ -1,4 +1,4 @@
-import { Instagram, Youtube, TikTok, Mail } from "lucide-react";
+import { Instagram, Youtube, Mail } from "lucide-react";
 import { Link } from "react-router-dom";
 
 const Footer = () => {
@@ -24,7 +24,7 @@ const Footer = () => {
                 <Youtube className="h-5 w-5" />
               </a>
               <a href="https://tiktok.com" target="_blank" rel="noopener noreferrer" className="hover:text-cat-primary transition-colors" aria-label="TikTok">
-                <TikTok className="h-5 w-5" />
+                <span className="text-lg">📱</span>
               </a>
             </div>
           </div>

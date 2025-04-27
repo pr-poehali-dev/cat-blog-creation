@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { Button } from "./ui/button";
-import { Menu, X, Instagram, Youtube, TikTok } from "lucide-react";
+import { Menu, X, Instagram, Youtube } from "lucide-react";
 import { Link } from "react-router-dom";
 
 const Header = () => {
@@ -38,7 +38,7 @@ const Header = () => {
             <Youtube className="h-5 w-5 hover:text-cat-primary transition-colors" />
           </a>
           <a href="https://tiktok.com" target="_blank" rel="noopener noreferrer" aria-label="TikTok">
-            <TikTok className="h-5 w-5 hover:text-cat-primary transition-colors" />
+            <span className="text-lg hover:text-cat-primary transition-colors">📱</span>
           </a>
         </div>
 
@@ -95,7 +95,7 @@ const Header = () => {
                 <Youtube className="h-6 w-6" />
               </a>
               <a href="https://tiktok.com" target="_blank" rel="noopener noreferrer" aria-label="TikTok">
-                <TikTok className="h-6 w-6" />
+                <span className="text-2xl">📱</span>
               </a>
             </div>
           </div>
