@@ -1,25 +1,30 @@
-import { useLocation } from "react-router-dom";
-import { useEffect } from "react";
+import { Button } from "@/components/ui/button";
+import { Link } from "react-router-dom";
+import Header from "@/components/Header";
+import Footer from "@/components/Footer";
 
 const NotFound = () => {
-  const location = useLocation();
-
-  useEffect(() => {
-    console.error(
-      "404 Error: User attempted to access non-existent route:",
-      location.pathname
-    );
-  }, [location.pathname]);
-
   return (
-    <div className="min-h-screen flex items-center justify-center bg-gray-100">
-      <div className="text-center">
-        <h1 className="text-4xl font-bold mb-4">404</h1>
-        <p className="text-xl text-gray-600 mb-4">Oops! Page not found</p>
-        <a href="/" className="text-blue-500 hover:text-blue-700 underline">
-          Return to Home
-        </a>
-      </div>
+    <div className="min-h-screen flex flex-col">
+      <Header />
+      <main className="flex-1 flex items-center justify-center py-20">
+        <div className="container px-4 text-center">
+          <div className="space-y-6">
+            <div className="mx-auto w-32 h-32 rounded-full bg-cat-accent flex items-center justify-center">
+              <span className="text-6xl">😿</span>
+            </div>
+            <h1 className="text-4xl md:text-5xl font-bold">Мяу-404</h1>
+            <p className="mx-auto max-w-[600px] text-lg text-muted-foreground">
+              Кажется, эта страница потерялась так же, как я иногда теряю свои игрушки под диваном.
+              Может быть, мы сможем найти ее вместе?
+            </p>
+            <Button size="lg" asChild>
+              <Link to="/">Вернуться на главную</Link>
+            </Button>
+          </div>
+        </div>
+      </main>
+      <Footer />
     </div>
   );
 };
